@@ -2,35 +2,36 @@
 
 This is a full-stack blog application built using the FARM stack:
 
-- FastAPI for the backend
-- React for the frontend
-- MongoDB as the database
-- MongoDB Compass for database management
+- **FastAPI** for the backend
+- **React** for the frontend
+- **MongoDB** as the database
+- **MongoDB Compass** for database management
 
 The application allows users to create, read, update, and delete (CRUD) blog posts, with a simple and responsive interface.
 
 ## Table of Contents
 
-- [FARM (FastAPI, React, MongoDB) Blog App](#farm-fastapi-react-mongodb-blog-app)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Prerequisites](#prerequisites)
-  - [Project Structure](#project-structure)
-  - [Backend Setup (FastAPI)](#backend-setup-fastapi)
-    - [1. Install Backend Dependencies](#1-install-backend-dependencies)
-    - [2. Create MongoDB Connection (database.py)](#2-create-mongodb-connection-databasepy)
-    - [3. Define Blog Models (models.py)](#3-define-blog-models-modelspy)
-    - [4. Set Up FastAPI Routes (app.py)](#4-set-up-fastapi-routes-apppy)
-  - [Frontend Setup (React)](#frontend-setup-react)
-    - [1. Install Frontend Dependencies](#1-install-frontend-dependencies)
-    - [2. Create Blog App Interface (App.js)](#2-create-blog-app-interface-appjs)
-  - [MongoDB Setup (MongoDB Compass)](#mongodb-setup-mongodb-compass)
-    - [1. Install MongoDB and MongoDB Compass](#1-install-mongodb-and-mongodb-compass)
-    - [2. Create a Database and Collection](#2-create-a-database-and-collection)
-  - [Running the Application](#running-the-application)
-    - [1. Run the FastAPI Backend](#1-run-the-fastapi-backend)
-    - [2. Run the React Frontend](#2-run-the-react-frontend)
-  - [API Endpoints](#api-endpoints)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Backend Setup (FastAPI)](#backend-setup-fastapi)
+  - [1. Install Backend Dependencies](#1-install-backend-dependencies)
+  - [2. Create MongoDB Connection (database.py)](#2-create-mongodb-connection-databasepy)
+  - [3. Define Blog Models (models.py)](#3-define-blog-models-modelspy)
+  - [4. Set Up FastAPI Routes (app.py)](#4-set-up-fastapi-routes-apppy)
+- [Frontend Setup (React)](#frontend-setup-react)
+  - [1. Install Frontend Dependencies](#1-install-frontend-dependencies)
+  - [2. Create Blog App Interface (App.js)](#2-create-blog-app-interface-appjs)
+- [MongoDB Setup (MongoDB Compass)](#mongodb-setup-mongodb-compass)
+  - [1. Install MongoDB and MongoDB Compass](#1-install-mongodb-and-mongodb-compass)
+  - [2. Create a Database and Collection](#2-create-a-database-and-collection)
+- [Running the Application](#running-the-application)
+  - [1. Run the FastAPI Backend](#1-run-the-fastapi-backend)
+  - [2. Run the React Frontend](#2-run-the-react-frontend)
+- [API Endpoints](#api-endpoints)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
@@ -142,3 +143,15 @@ The React app should be accessible at `http://localhost:3000`.
 - `GET /posts/{post_id}`: Retrieve a specific blog post by ID
 - `PUT /posts/{post_id}`: Update a blog post by ID
 - `DELETE /posts/{post_id}`: Delete a blog post by ID
+
+## Environment Variables
+
+- Use a `.env` file to manage environment-specific variables, such as database URLs and API keys.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
